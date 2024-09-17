@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <body>
+    <center>
+    <h1>This Page is used to demonstrate basics of the Javascript
+        i.e. 
+        
+        <ol><li>Generating an alert</li>
+        <li>Declaring variables of various data types</li>
+        <li>Demonstrating use of different types of operators</li></ol>
+        
+        The code can be seen in the source of the page while all the results are logged into the console.
+        
+        </h1>
+    
+    </center>
+    <script>
+// 1) Introduction
+        
+       // In javascript strings are primitive values, created using help of ", ' quotes.
+        
+        var st1 = "This is an example of a string created using double quotes";
+        var st2 = 'This is an example of a string created using single quotes';
+        
+        console.log(st1); console.log(st2);
+        // The two quotes can be used inside each other as well
+        
+        var st3 = 'My name is "Faraz Nasim Kidwai" ';
+        var st4 = "My name is "Faraz Nasim Kidwai" ";
+        
+        console.log(st3); console.log(st4); 
+        // in st4 "My name is "Faraz Nasim Kidwai" is used it will not give out the name ignoring it as not being the part of string
+
+
+// 2) Escape Characters
+        //Special Characters used to perform specific functions in strings
+        var st9 = "My name is \"Faraz Nasim Kidwai\" ";// \" used to insert ""
+        var st10 = "My name is \'Faraz Nasim Kidwai\' ";// \' used to insert ''
+        
+        var st11 = "My name is \\Faraz Nasim Kidwai\\ ";// \\ used to insert \
+                console.log(st9); console.log(st10); console.log(st11);
+
+        
+        
+
+// 3) String Concatenation
+        
+        // Strings can be concatenated(Joined) using "+" sign
+        
+        var st5 = "My name is";
+        var st6 = "Faraz Nasim Kidwai";
+        var st7 = st5 + st6;
+        
+        console.log(st7);
+        
+        //In concatenation whitespaces are also given validation
+        
+        var st8 = st5 + " " + st6;
+        console.log(st8); 
+            
+
+// 4) String Length
+        
+        // In JS length of the string can be found using length method
+        var st12 = "Faraz Nasim Kidwai";//output should be 18 as JS also couns white spaces
+        console.log(st12);
+        
+// 5) Slicing Strings in JS
+        
+        var st13 = 'My name is "Faraz Nasim Kidwai" ';
+        console.log(st13.slice(0,10));
+
+            </script>
+    </body>
+    </head>
+</html>
