@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+    <head>  <title>Challenge 1</title>  </head>
+
+        <body>
+    <center>
+    <h1>This is a series of programs used to show working of various operations on strings.
+    
+        </h1>
+    </center>
+            <h1>
+            
+                <ol><li>Tweet word counter</li>
+                <li>Name capitalizer</li>
+                </ol></h1>
+        
+    <center><h1>The result of all the afformentioned programs will be Displayed in form of a alert and will also be console logged.</h1>
+            Reload the Page to see the results again
+            </center>
+    
+            
+            <script> 
+          // First program: Tweet word counter
+                
+           //Taking input     
+            var tw = prompt("1) Enter your tweet :->");  
+                
+      var tw_l = tw.slice(0,280);            //Limiting the entry of characters using slice
+
+    alert( "You have typed " + tw.length + " and are left with " + (280-tw.length) + " characters");        //Generating alert of result        
+
+    
+    console.log("You have typed " + tw.length + " and are left with " + (280-tw.length) + " characters");                // Console logging the result
+
+               
+  //---------------------------------------------------------------------------------------              
+           // Second program: Name Capitalizer
+                
+           //Taking input     
+            var nm = prompt("2) Enter your Name :->");
+            var nm_s = nm.slice(0,1);           //isolating first character
+            var nm_l = nm.slice(1,nm.length);   //isolating rest of the name 
+            var nm_cap = nm_s.toUpperCase();    //turning the first character capital 
+            var Final = nm_cap+nm_l; // Concatenating first character with rest of the name   
+                alert ("Your name is: " + Final );     //Generating alert of result        
+
+                console.log("Your name is: " + Final ); // Console logging the result
+
+                
+// ----------------------------------------------------------------------------------------               
+                
+                
+            </script>
+    </body>
+</html>
