@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Challenge5: leap year finder</title>
+</head>
+<body>
+  <center>  <h1>Challenge 5</h1>
+    <h2>
+        a program that works out whether if a given year is a leap year. A normal year has 365 days, leap years have 366, with an extra day in February. 
+            </h2>  </center>
+<h2>
+This is how to work out whether if a particular year is a leap year:
+<ol>
+    <li>A year is a leap year if it is evenly divisible by 4 ;</li>
+
+    <li>except if that year is also evenly divisible by 100;</li>
+
+    <li>unless that year is also evenly divisible by 400.</li>
+    </ol></h2>
+    
+    <center>
+    <h2>
+
+e.g. Is the year 2000 a leap year?:
+
+2000 ÷ 4 = 500 (Leap)
+
+2000 ÷ 100 = 20 (Not Leap)
+
+2000 ÷ 400 = 5 (Leap!)
+</h2>
+        <h3>The results are also logged into the console.</h3>
+    </center>
+    
+    
+    <script>
+var y = parseInt(prompt("Enter the year you want to evaluate:")); 
+        
+function isLeap(year) {
+    
+  if ((year%4===0)&&(year%100!==0)) {
+      return "Leap year.";
+  } else if ((year%4===0)&&(year%400===0)){
+      return "Leap year.";
+  }else{
+      return "Not leap year.";
+  }
+
+    
+
+
+}
+        
+alert(isLeap(y));
+console.log(isLeap(y));        
+        
+        
+    </script>
+</body>
+</html>
