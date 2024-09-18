@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Challenge4: BMI Calculator</title>
+</head>
+<body>
+  <center>  <h1>Challenge 4</h1>
+    <h2>
+        In this challenge a BMI calculator is made that takes input of weigth and height from user and gives and is rounded to nearest whole number.<br>
+        
+        The results is shown in an alert and also logged into the console.
+</h2>
+      </center>
+    
+    
+    
+    <script>
+        
+ var wt = parseFloat(prompt("Enter your weight(Kg):"));//input (weight) taken from the user
+ var ht = parseFloat(prompt("Enter your height(m):"));//input (height) taken from the user        
+function BMI (w,h){ // Declaring the function
+        
+    return Math.round(w/(h**2));// Operating the inputs and rounding of to nearest integer
+    
+    }   
+    
+    //Outputting results    
+alert("Your BMI is: " + BMI(wt,ht));
+console.log("Your BMI is: " + BMI(wt,ht));        
+        
+    </script>
+</body>
+</html>
