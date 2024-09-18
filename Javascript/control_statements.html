@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Control Statements</title>
+</head>
+<body>
+  <center>  <h1>Control Statements</h1>
+    
+<h2>The results in console.</h2>      
+    </center>
+    
+    
+    
+    <script>
+   var age = 18; // change to see change in if based program 
+    var lic = true;    // change to see change in if logical based program
+let month = 3; // change to see change in switch based program
+let monthname;
+      
+        
+        
+        
+        
+        
+// Control statements such as if, else if, else and swtich are used to design a code so that a particular block of code is excuted upon fulfillment of certain condition.
+
+
+    //Basic if statement    
+        
+        if (age>= 18){ //opening a control statement with a condition
+        
+        console.log("you are eligible to drive"); //excuted if condition is true 
+        
+    } else{
+            console.log("you are not eligible to drive"); // executed if condition is false
+    
+    }  
+        
+    // if statement with else if statement     
+       
+    
+        if (age> 18){ //opening a control statement with a condition
+        
+        console.log("you are eligible to drive"); //excuted if condition is true 
+        
+    } else if( age = 18){ // another conditon elavuated
+            console.log("get your License first"); // executed if condition is false
+    
+    }    else{ //gets executed if none of the conditons are true
+        console.log("You are not elligible to drive");
+    }  
+        
+    
+    // Switch statements:-                                                                  The JavaScript switch statement evaluates an expression and executes a block of code based on matching cases. It provides an alternative to long if-else chains, improving readability and maintainability, especially when handling multiple conditional branches. 
+        
+    // When using switch statments another keywords becomes particularly important:-
+        
+        //Break Statement: After executing a code block, the break statement terminates the switch statement, preventing execution from falling through to subsequent cases. If break is omitted, execution will continue to the next case (known as “fall-through”).
+        
+//Default Case: The default case is optional. If no match is found, the code block under default is executed.
+        
+switch (month) {
+    case 1:
+        monthname = "January";
+        console.log(monthname);
+        break;
+        
+    case 2:
+        monthname = "February";
+        console.log(monthname);
+        break;
+        
+    case 3:
+        monthname = "March";
+        console.log(monthname);
+        break;
+        
+    case 4:
+        monthname = "April";
+        console.log(monthname);
+        break;
+        
+    case 5:
+        monthname = "May";
+        console.log(monthname);
+        break;
+        
+    case 6:
+        monthname = "June";
+        console.log(monthname);
+        break;
+        
+    case 7:
+        monthname = "July";
+        console.log(monthname);
+        break;
+        
+    case 8:
+        monthname = "August";
+        console.log(monthname);
+        break;
+        
+    case 9:
+        monthname = "September";
+        console.log(monthname);
+        break;
+        
+    case 10:
+        monthname = "October";
+        console.log(monthname);
+        break;
+        
+    case 11:
+        monthname = "November";
+        console.log(monthname);
+        break;
+        
+    case 12:
+        monthname = "December";
+        console.log(monthname);
+        break;
+        
+    default:
+        monthname = "There are only 12 months in a year";
+        console.log(monthname);
+}
+
+        
+        
+        
+        // Using Conditional satements with logical operators
+        
+        //Logical operators can be used along with if statements to evaluate two conditions together.
+        
+if((age > 18)&&(lic = true)){// True only if both the conditions are true
+    
+    console.log("You are elligible to drive");
+    
+} else if ((age > 18)||(lic = false)){//True even if one of the two conditions is true
+    
+    console.log("Apply for license");
+}  else{
+    console.log("You are not elligible to drive");
+}      
+
+        
+//   Terinarry operator:- 
+        //JavaScript also contains a conditional operator that assigns a value to a variable based on some condition.
+        
+        //syntax:  variablename = (condition) ? true:false 
+       
+    let canVote = (age >= 18) ? "Yes, you can drive." : "No, you can't drive.";
+console.log(canVote);    
+        
+    </script>
+</body>
+</html>
