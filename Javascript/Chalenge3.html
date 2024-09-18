@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> Challenge 3</title>
+</head>
+<body>
+  <center>  <h1>Challenge 3</h1>
+    <h2>I was reading this article by Tim Urban - Your Life in Weeks and realised just how little time we actually have.<br><br>
+
+In this challenge, a function is created that tells us  how much time one has left to live assuming one reaches 90 years of age
+<br><br>
+
+It will take user's current age as the input and console.logs a message with  time left in this format:<br><br>
+<br>
+        <b>You have x days, y weeks, and z months left.</b><br><br><br>
+
+Where x, y and z are replaced with the actual calculated numbers.
+
+</h2>
+      
+<h4>The results are console logged.</h4>      
+    </center>
+    
+    
+    
+    <script>
+   
+          
+          
+     var enter = parseInt(prompt("Enter Your age:"));//input (age) taken from the user
+          
+function lifeInWeeks(age) {//declaring the function
+    var k = 90 - age;      //operation on input 
+    
+ return ("You have "+(k*365)+" days, "+(k*52)+" weeks, and "+(k*12)+" months left.");
+}
+  console.log(lifeInWeeks(enter));
+          
+          
+    </script>
+</body>
+</html>

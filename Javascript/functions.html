@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> Functions</title>
+</head>
+<body>
+  <center>  <h1>Functions</h1>
+    <h2><em>Check the developer console for the log <br>and source code to see JS</em></h2>
+    </center>
+      <script>
+    
+        // Functions are blocks of code written together to perform a specific task, this collection of code reduces the repeatibilty of codes allowing for a simple and efficient design of code that would allow for solving of complex problems easily.
+        
+        
+        
+        //Functions are declared and arguments can be passed into them,these arguments are used in the functions to be used in the specific code blocks
+        
+        
+    function func1(){ // Declaring the function
+    
+        console.log("This sentence is consloe logged because the function func1 is called");
+        
+    }
+    
+        
+function func2(arg1){ //declaring a function and passing the argument
+    
+    console.log("Hello my name is " + arg1);
+}    
+        
+var n1 = parseFloat(prompt("Enter 1st number to be multiplied:"));
+
+var n2 = parseFloat(prompt("Enter 2nd number to be multiplied:"));          
+
+function func3(num1,num2){
+    return num1*num2;
+    //these values are passed after being taken input from the users.
+    //return statement is used to operations being done on two operands.
+}  
+        
+        
+func1(); func2("Faraz Nasim Kidwai"); console.log("func3 giving the result of multiiplication of two numbers is (by returning the value of function): " + func3(n1,n2));
+        
+        
+        // Calling the functions without and with passing arguments        
+    </script>
+</body>
+</html>
