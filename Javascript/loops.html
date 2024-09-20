@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Loops in Js</title>
+</head>
+<body>
+  <center>  <h1>Loops</h1>
+    <h2>
+        
+
+Loops allows one to itterate over a piece of code for a certain time period based on certain condition.
+</h2><br>
+<h3> All the results are logged into the console. </h3>
+    </center>
+    
+    
+    
+    <script>
+    /********************************************************************************************
+ * Looping & Iteration
+ */
+
+// for loop
+for(var i = 1; i <= 10; ++i) {
+    console.log(i);
+}
+
+console.log("-----------------------------------------------------------");
+
+for(var i = 1; i <= 20; i+=2) {
+    console.log(i);
+}
+
+console.log("-----------------------------------------------------------");
+
+        var na = ["Faraz", "Faizan","Aafia"];
+for(var i = 0; i < na.length; ++i) {
+    console.log(na[i]);
+}
+
+console.log("-----------------------------------------------------------");
+
+// the same above loop using while() loop
+var i = 0;
+while(i < na.length) {
+    console.log(na[i]);
+    ++i;
+}
+
+console.log("-----------------------------------------------------------");
+
+// continue statement
+for(var i = 0; i < na.length; ++i) {
+    if(typeof na[i] !== 'string') continue;
+    console.log(na[i]);
+}
+
+console.log("-----------------------------------------------------------");
+
+// break statement
+for(var i = 0; i < na.length; ++i) {
+    if(typeof na[i] === 'boolean') break;
+    console.log(na[i]);
+}
+    </script>
+</body>
+</html>

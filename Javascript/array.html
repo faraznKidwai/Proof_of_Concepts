@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Arrays</title>
+</head>
+<body>
+  <center>  <h1>Arrays</h1>
+    <h2>
+        
+Arrays are a data structure consisting of a collection of elements (values or variables), of same memory size.<br>
+
+In Js the indexing of array starts from 0.
+</h2><br>
+<h3> All the results are logged into the console. </h3>
+    </center>
+    
+    
+    
+    <script>
+// Creating an array
+        var na = ["Faraz", "Faizan","Aafia"];
+        var position = [1,2,3,34,5,454];
+        var n_d  = ["Faraz",34,"Nasim",454,"Aafia",5];
+
+        console.log(na); console.log(position);console.log(n_d);
+        
+ //Acessing the elements     
+        console.log("Name : " + na[2]+"  Position : " + position[0]);
+        
+        //***************************************************************************
+        
+console.log('*********************************************************************************************************');
+        //***************************************************************************
+        
+//Checking the elements
+        var che = "Faizan";
+        var che1 = "Fam";
+        
+        console.log(na.includes(che));// returns true 
+        console.log(na.includes(che1));// returns false
+        
+//***************************************************************************
+        
+console.log('*********************************************************************************************************');
+        //***************************************************************************
+                
+
+// Program to find whether the person is an invited guest or not
+        
+        var guest = ["Faraz","Aditya","Danish","Anmol"];
+        var name = "Hamza";
+        
+        
+if (guest.includes(name)){
+
+    console.log("You are welcome please submit the present here"); 
+    
+} else if(name ==="Faraz"){
+
+    console.log("Bruh, you are the host here");
+}else{
+    console.log("Try next time");
+}
+        
+//***************************************************************************
+        
+console.log('*********************************************************************************************************');
+        //***************************************************************************
+
+// Adding and removing elements to an array
+        //to add elemets push method is used
+        na.push("Danish");
+
+        console.log(na);
+   
+        //to remove elemets pop method is used
+        na.pop("Danish");
+
+        console.log(na);
+   
+    </script>
+</body>
+</html>
