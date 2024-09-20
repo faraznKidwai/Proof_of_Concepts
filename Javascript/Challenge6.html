@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Challenge 6</title>
+</head>
+<body>
+  <center>  <h1>Challenge 6: Fizz Buzz</h1>
+    <h2>
+        
+
+This program ouputs an array where every number divisible by 3 is replaced with "Fizz" and every number divisible 5 is replaced by "Buzz", and number divisble by both is replaced with "Fizz Buzz".
+</h2><br>
+<h3> All the results are logged into the console. </h3>
+    </center>
+    
+    
+    
+    <script>
+ 
+let result = [0]; //Declaring an array to store the results in
+var number = 20; //number upto which we wants the results 
+        
+    for(var i = 1; i <= number; i++){// for loop to traverse through to the get to the given number
+        
+        if((i%3===0) && (i%5===0) ){// condition to check if the number is by 3 and 5
+            result.push("Fizz Buzz");
+        }
+        else if(i%3===0){// condition to check if the number is divisible by 3
+
+            result.push("Fizz");
+        }
+        
+        
+     else if(i%5===0){// condition to check if the number is divisible by  5
+
+        result.push("Buzz");
+         
+    }else{// condition  if the number is neither divisible by 3 or 5
+
+        result.push(i);
+    }  
+    
+    
+    }
+        
+    console.log(result);    
+        
+    </script>
+</body>
+</html>
