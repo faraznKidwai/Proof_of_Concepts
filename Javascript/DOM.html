@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>DOM Manipulation</title>
+</head>
+<body onkeydown="return myKeyPress(event)">
+  <center>
+    <h1 id="heading">Document Object Model</h1>
+    <h2>
+      The Document Object Model (DOM) is a feature of JavaScript. It allows dynamic changes to HTML elements on a webpage based on user-triggered events. This is achieved by treating HTML elements as documents that can be accessed and manipulated like objects.
+    </h2><br>
+    
+    <button id="change_heading">Click me to change the color of the heading</button><br>
+
+    <h3>Press "Y" on the keyboard to see an alert</h3><br><br><br>
+    <h3>All the results are also logged into the console</h3>
+  </center>
+
+  <script>
+    // Selecting elements using JS:
+    var get_heading = document.getElementById("heading");  
+    console.log(get_heading);
+    console.log("Hover the mouse over the button and click it to change the heading color");
+
+    // Using elements to trigger changes on other elements
+    document.getElementById("change_heading").addEventListener("click", function(){
+      document.getElementById("heading").style.color = "red";
+    });
+
+    function myKeyPress(e) {
+      var keynum = e.keyCode || e.which;  // Standard across browsers
+      
+      if (keynum === 89) { // ASCII code for 'Y'
+        alert("Y");
+        console.log("Y key pressed");
+      }
+    }
+  </script>
+</body>
+</html>
