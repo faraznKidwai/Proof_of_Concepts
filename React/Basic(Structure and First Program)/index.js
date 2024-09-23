@@ -14,9 +14,9 @@ ReactDOM.render(
   <div>// One single Div container being rendered using React
     <h1>My Favourite Foods</h1>
     <ul>
-      <li>Bacon</li>
-      <li>Noodles</li>
-      <li>Jamon</li>
+      <li>Biryani</li>
+      <li>Kulcha Nihari</li>
+      <li>Kebab Paratha</li>
     </ul>
   </div>,
   document.getElementById("root")//Rendered into HTML page
